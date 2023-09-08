@@ -140,7 +140,7 @@ def merge_all_rasters(input_raster_list, output_raster):
     # Mosaik Raster mit GDAL
     vrt = gdal.BuildVRT('/vsimem/temp.vrt', input_raster_list, srcNodata=0)
     gdal.Translate(output_raster, vrt)
-    vrt = None  # Freigabe der Ressource
+    vrt = None  
 
 
 
